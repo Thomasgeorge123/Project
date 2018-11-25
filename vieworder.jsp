@@ -1,4 +1,4 @@
-%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
       <%@ taglib prefix="c" 
            uri="http://java.sun.com/jsp/jstl/core" %>
@@ -23,24 +23,24 @@
 							</div>
 							<div class="module-body">
 
- <form action="vsorder" >
+ <form action="order" >
 <div class="table-users" style="width:1200px">
    <div class="header">orders</div>
    
    <table >
-      <tr><th>Supplier</th>
+      <tr><th>Customer ID</th>
          <th> Product Name</th>
          <th>Quantity</th>
          <th>Total</th>
           <th colspan="2">Action</th> 
 <c:forEach var="r" items="${en}">
 		<tr>
- <td>${r.id}</td>
+ <td>${r.cid}</td>
 <td>${r.product}</td>
 <td>${r.quantity}</td>
 <td>${r.price}</td>
 
-<td ><button type="submit" name="oid" value="${r.oid}" class="btn btn-primary" >Add</button> </td>
+<td ><button type="submit" name="oid" value="${r.oid}" class="btn btn-primary" >supplier</button> </td>
  </c:forEach>    
 		
             
@@ -53,4 +53,4 @@
   </div>
   </div></div>
 </body>
-</html>
+	</htm>
