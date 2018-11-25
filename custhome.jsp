@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Admin</title>
+<title>Shop</title>
         <link type="text/css" href="css/bootstrap.min.css" rel="stylesheet">
         <link type="text/css" href="css/bootstrap-responsive.min.css" rel="stylesheet">
         <link type="text/css" href="css/theme.css" rel="stylesheet">
@@ -19,7 +19,7 @@
             <div class="navbar-inner">
                 <div class="container">
                     <a class="btn btn-navbar" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-                        <i class="icon-reorder shaded"></i></a><a class="brand" href="index.html">Admin </a>
+                        <i class="icon-reorder shaded"></i></a><a class="brand" href="index.html">Shop </a>
                     <div class="nav-collapse collapse navbar-inverse-collapse">
                         <ul class="nav nav-icons">
                             <li class="active"><a href="#"><i class="icon-envelope"></i></a></li>
@@ -69,15 +69,12 @@
                     <div class="span3">
                         <div class="sidebar">
                             <ul class="widget widget-menu unstyled">
-                                <li class="active"><a href="custhome"><i class="menu-icon icon-dashboard"></i>Home
+                                <li class="active"><a href="C:\Users\DELL\Desktop\decline\index.html"><i class="menu-icon icon-dashboard"></i>Home
                                 </a></li>
                                 
                               
                                 <li><a href="orders"><i class="menu-icon icon-paste"></i>Add orders </a></li>
-                               <li><a href="feedback"><i class="menu-icon icon-paste"></i>Add Feedback </a></li>
-                              
                                 <li><a href="custorder"><i class="menu-icon icon-table"></i>my orders</a></li>
-                              
                                  <li><a href="signout"><i class="menu-icon icon-table"></i>signout</a></li>
                                  </ul>
                                                             
