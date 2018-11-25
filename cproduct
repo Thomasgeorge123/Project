@@ -1,0 +1,66 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+     <%@ taglib prefix="c" 
+           uri="http://java.sun.com/jsp/jstl/core" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<jsp:include page="company.jsp"></jsp:include>
+				<div class="span9">
+					<div class="content">
+
+						<div class="module">
+							<div class="module-head">
+								<h3>Forms</h3>
+							</div>
+							<div class="module-body">
+
+<form class="form-horizontal row-fluid" action="incproduct">
+
+
+<div class="control-group">
+<label class="control-label" for="basicinput">Category</label>
+<div class="controls">
+<select tabindex="1" data-placeholder="Select here.." name="category" class="span6">
+<option><c:out value="${b }"></c:out></option><c:forEach var="r" items="${en}"><option>${r.category}</option></c:forEach>
+</select>
+<button type="submit" class="btn" style="background-color: blue;color:white" name="action" value="view">View</button>
+</div>
+</div>
+<div class="control-group">											
+<label class="control-label" >Product Name</label>
+<div class="controls">
+<select tabindex="1" data-placeholder="Select here.." name="product" class="span6">
+<option><c:out value="${d }"></c:out></option><c:forEach var="s" items="${es}"><option>${s.product}</option></c:forEach>
+</select>
+</div></div>
+<div class="control-group">											
+<label class="control-label" >price</label>
+<div class="controls">
+<input  type="text" placeholder="" name="price" class="span6 tip">
+</div></div>
+<div class="control-group">											
+<label class="control-label" >Quantity</label>
+<div class="controls">
+<input  type="text" placeholder="" name="quantity" class="span6 tip">
+</div></div>
+<div class="control-group">											
+<label class="control-label" >Remarks</label>
+<div class="controls">
+
+<textarea placeholder="" name="remarks" class="span6 tip"></textarea>
+</div></div>
+<div class="control-group">	
+<div class="controls">
+<button type="submit" class="btn" name="action" value="submit">Submit </button>
+</div>
+</div>
+</form>
+</div></div></div></div>
+
+</body>
+</html
